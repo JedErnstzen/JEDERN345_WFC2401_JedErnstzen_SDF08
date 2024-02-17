@@ -152,6 +152,8 @@ header {
     max-width: 100px;
 }
 
+
+/* Nav links and hamburger button code*/
 .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -263,7 +265,7 @@ header {
     display: inline-block;
 }
 
-
+/* media query for accessibility */
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -330,6 +332,7 @@ header {
     margin: 0 auto;
 }
 
+/* another media query for accessibility */
 @media (min-width: 800px) {
     .specialties {
         display: flex;
@@ -355,7 +358,7 @@ header {
     box-shadow: var(--bs);
 }
 
-
+/* Media Query for the grid layout */
 @media (min-width: 600px) {
     .about-me {
         display: grid;
@@ -396,6 +399,7 @@ header {
     text-align: center;    
 }
 
+/* Grid for the images in My work*/
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -421,13 +425,14 @@ header {
     z-index: 2;
 }
 
+/* Animation that zooms in when hovered */
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.1);
     opacity: .8;
 }
 
-/* Footer */
+/* Footer Section for the project links*/
 
 .footer {
     background: #111;

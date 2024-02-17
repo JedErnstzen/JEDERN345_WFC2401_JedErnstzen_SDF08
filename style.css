@@ -11,9 +11,10 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #807f7ff3;
+    --clr-dark: #252525;
+    --clr-text: #fff;
+    --clr-accent: #FF5733;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -24,13 +25,13 @@
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-/* minor accessibilty features*/
+/* Font sizes*/
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fs-body: 1.2rem;
     }
 }
 
@@ -128,6 +129,12 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
 }
 
+.section__subtitle--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
 .section__title--specialties {
     color: var(--clr-accent);
     position: relative;
@@ -174,7 +181,7 @@ header {
     color: inherit;
     font-weight: var(--fw-bold);
     font-size: var(--fs-h2);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .nav__link:hover {
@@ -205,7 +212,7 @@ header {
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+    transform: rotate(90deg) translateX(-11px);
 }
 
 .nav-open .hamburger::after {
@@ -222,7 +229,7 @@ header {
 .hamburger::after {
     background: var(--clr-accent);
     width: 2em;
-    height: 3px;
+    height: 5px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
@@ -236,8 +243,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 11px; }
+.hamburger::after { bottom: 11px; }
 
 
 
@@ -245,6 +252,7 @@ header {
 
 .intro {
     position: relative;
+    color: var(--clr-text);
 }
 
 .intro__img {
@@ -298,7 +306,7 @@ header {
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--clr-text);
     text-align: center;
 }
 
@@ -340,6 +348,7 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    color: var(--clr-text);
 }
 
 .about-me__img {
@@ -383,19 +392,23 @@ header {
 
 .my-work {
     background-color: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-text);
     text-align: center;    
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 8px;
+    align-items: center;
 }
 
+
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
+
 
 .portfolio__img {
     transition: 

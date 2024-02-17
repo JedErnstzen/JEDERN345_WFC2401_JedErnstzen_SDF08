@@ -11,7 +11,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #807f7ff3;
+    --clr-light: #8d8c8c;
     --clr-dark: #252525;
     --clr-text: #fff;
     --clr-accent: #FF5733;
@@ -76,7 +76,7 @@ strong{font-weight: var(--fw-bold)}
    color: var(--clr-dark);
    text-decoration: none;
    cursor: pointer;
-   font-size: .8rem;
+   font-size: 1.1rem;
    text-transform: uppercase;
    letter-spacing: 2px;
    font-weight: var(--fw-bold);
@@ -303,7 +303,7 @@ header {
 
 .my-specialties {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(img/services-bg.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-text);
